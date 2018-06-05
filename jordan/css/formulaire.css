@@ -1,0 +1,132 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+/*body *{
+  border: 1px solid black;
+}*/
+form{
+  width: 600px;
+  height: 500px;
+  margin:auto;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #AAD5C0;
+}
+
+input, label, select{
+  width: 230px;
+  height: 25px;
+  margin-bottom: 20px;
+  outline: none;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+label{
+  display: block;
+  float: left;
+  margin-left: 50px;
+}
+
+.femme, .homme{
+  width: 80px;
+}
+input, select{
+  background-color: #DBDDD1;
+}
+
+fieldset{
+  background-color: #5F7262;
+  box-shadow: 2px 2px 10px #AAD5C0;
+  padding: 10px;
+  margin: auto;
+  /*border-radius: 10%;*/
+}
+.button{
+  height: 40px;
+  width: 140px;
+  margin-left: 50px;
+  border-radius: 25px 25px 25px 25px;
+}
+.button:hover{
+  background-color: #DBDDD1;
+  box-shadow: 2px 2px 2px #AAD5C0 inset;
+}
+
+
+.couleur1{
+  content: '';
+  width: 700px;
+  height: 550px;
+  /*border-radius: 10%;*/
+  background-color: #05605F;
+  position: absolute;
+  top: 80px;
+  left: 250px;
+  z-index: -15;
+  box-shadow: 2px 2px 10px #05605F;
+}
+.couleur2{
+  content: '';
+  width: 550px;
+  height: 450px;
+/*  border-radius: 10%;*/
+  background-color:  #DBDDD1;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  z-index: -18;
+  box-shadow: 2px 2px 10px #05605F;
+}
+.couleur3{
+  content: '';
+  width: 600px;
+  height: 450px;
+/*  border-radius: 10%;*/
+  background-color: #AAD5C0;
+  position: absolute;
+  top: 0;
+  left: 110px;
+  z-index: -20;
+  box-shadow: 2px 2px 10px #05605F;
+}
+.couleur4{
+  content: '';
+  width: 600px;
+  height: 450px;
+/*  border-radius: 10%;*/
+  background-color: #DBDDD1;
+  position: absolute;
+  top: 80px;
+  left: 610px;
+  z-index: -15;
+  box-shadow: 2px 2px 10px #05605F;
+}
+.couleur5{
+  content: '';
+  width: 600px;
+  height: 450px;
+/*  border-radius: 10%;*/
+  background-color: #AAD5C0;
+  position: absolute;
+  top: 150px;
+  left: 710px;
+  z-index: -18;
+  box-shadow: 2px 2px 10px #05605F;
+}
+.couleur6{
+  content: '';
+  width: 600px;
+  height: 450px;
+/*  border-radius: 10%;*/
+  background-color: #05605F;
+  position: absolute;
+  top: 0;
+  left: 580px;
+  z-index: -20;
+  box-shadow: 2px 2px 10px #05605F;
+}
