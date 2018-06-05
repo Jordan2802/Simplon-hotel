@@ -148,3 +148,39 @@ background-image: url("entête.jpeg");
 .c1_p2, .c2_p1, .c3_p2, .c4_p1, .c5_p2{
  margin: 20px 40px 20px 40px;
 }
+
+/* ==== back to top ==== */
+
+.to-top{
+	color:#000000;
+	padding-top:1.8em;
+	display:inline-block;/* or block */
+	position:relative;
+	border-color:#000000;
+	text-decoration:none;
+	transition:all .3s ease-out;
+}
+.to-top:before{
+	content:'▲';
+	font-size:2.5em;
+  font-weight: lighter;
+  font-family: 'Proza Libre', sans-serif;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-.7em;
+	border:solid .07em black;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.to-top:hover{
+	color:#E52C27;
+	border-color:#E52C27;
+}
+.to-top:hover:before{
+	transform: rotate(360deg);
+}
