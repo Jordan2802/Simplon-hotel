@@ -14,7 +14,7 @@ header{
   background-repeat: no-repeat;
   background-position:center;
   background-color:  #DBDDD1;
-  height: 150px;
+  height: 300px;
   text-align: center;
 }
 h1{
@@ -88,7 +88,14 @@ nav p:hover{
   margin-bottom: 250px;
   width: 100%;
 }
-
+.text{
+  width: 600px;
+  height: 200px;
+  background-color: #dbddd1;
+  margin: auto;
+  border: 2px solid #05605F;
+  margin-bottom: 25px;
+}
 form{
   width: 600px;
   height: 500px;
@@ -133,7 +140,6 @@ fieldset{
   box-shadow: 2px 2px 10px #AAD5C0;
   padding: 10px;
   margin: auto;
-  /*border-radius: 10%;*/
 }
 .button{
   height: 40px;
@@ -153,10 +159,13 @@ fieldset{
   height: 550px;
   background-color: #05605F;
   position: absolute;
-  top: 320px;
+  top: 520px;
   left: 250px;
   z-index: -15;
   box-shadow: 2px 2px 10px #05605F;
+  animation-name: clr1;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 }
 .couleur2{
   content: '';
@@ -164,10 +173,13 @@ fieldset{
   height: 450px;
   background-color:  #DBDDD1;
   position: absolute;
-  top: 390px;
+  top: 590px;
   left: 50px;
   z-index: -18;
   box-shadow: 2px 2px 10px #05605F;
+  animation-name: clr2;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 }
 .couleur3{
   content: '';
@@ -175,10 +187,13 @@ fieldset{
   height: 450px;
   background-color: #AAD5C0;
   position: absolute;
-  top: 260px;
+  top: 460px;
   left: 110px;
   z-index: -20;
   box-shadow: 2px 2px 10px #05605F;
+  animation-name: clr3;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 }
 .couleur4{
   content: '';
@@ -186,10 +201,13 @@ fieldset{
   height: 450px;
   background-color: #DBDDD1;
   position: absolute;
-  top: 320px;
+  top: 520px;
   left: 570px;
   z-index: -15;
   box-shadow: 2px 2px 10px #05605F;
+  animation-name: clr4;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 }
 .couleur5{
   content: '';
@@ -197,10 +215,13 @@ fieldset{
   height: 450px;
   background-color: #AAD5C0;
   position: absolute;
-  top: 390px;
+  top: 590px;
   left: 650px;
   z-index: -18;
   box-shadow: 2px 2px 10px #05605F;
+  animation-name: clr5;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 }
 .couleur6{
   content: '';
@@ -208,10 +229,97 @@ fieldset{
   height: 430px;
   background-color: #05605F;
   position: absolute;
-  top: 240px;
+  top: 440px;
   left: 580px;
   z-index: -20;
   box-shadow: 2px 2px 10px #05605F;
+  animation-name: clr6;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes clr1 {
+  0%{
+    top: 0;
+    left: 0;
+  }
+  50%{
+    top: 260px;
+    left: 125px;
+  }
+  100%{
+    top: 520px;
+    left: 250px;
+  }
+}
+@keyframes clr2 {
+  0%{
+    top: 0;
+    left: 100%;
+  }
+  50%{
+    top: 260px;
+    left: 125px;
+  }
+  100%{
+    top: 520px;
+    left: 250px;
+  }
+}
+@keyframes clr3 {
+  0%{
+    top: 0;
+    left: 100%;
+  }
+  50%{
+    top: 15%;
+    left: 55%;
+  }
+  100%{
+    top: 520px;
+    left: 250px;
+  }
+}
+@keyframes clr4 {
+  0%{
+    top: 0;
+    left: 100%;
+  }
+  50%{
+    top: 25%;
+    left: 50%;
+  }
+  100%{
+    top: 520px;
+    left: 570px;
+  }
+}
+@keyframes clr5 {
+  0%{
+    top: 0;
+    left: 0;
+  }
+  50%{
+    top: 295px;
+    left: 325px;
+  }
+  100%{
+    top: 590px;
+    left: 650px;
+  }
+}
+@keyframes clr6 {
+  0%{
+    top: 10px;
+    left: 100%;
+  }
+  50%{
+    top: 220px;
+    left: 290px;
+  }
+  100%{
+    top: 440px;
+    left: 580px;
+  }
 }
 /*footer/////////////////////////////////////////////////////////////////////*/
 
