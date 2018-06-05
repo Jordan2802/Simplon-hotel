@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <title>LIJE : Google Maps JavaScript API v3</title>
+        <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map_canvas {
+            height: 700px;
+            width: 900px;
+            margin:50px auto;
+        }
+        </style>
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+     <script>
+    function initialize() {
+    var mapOptions = {
+        zoom: 6,
+        center: new google.maps.LatLng(48,2),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+    var features = [
+          {
+            position: new google.maps.LatLng(48.583148,7.747882)
+          }, {
+            position: new google.maps.LatLng(47.583148,7.747882)
+          }
+
+];
+features.forEach(function(feature) {
+          var marker = new google.maps.Marker({
+            position: feature.position,
+
+            map: map
+          });
+        });
+
+}
+        </script>
+    </head>
+    <body onload="initialize()">
+
+<div id="map_canvas"></div>
+
+    </body>
+</html>
