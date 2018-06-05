@@ -2,10 +2,53 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Proza+Libre" rel="stylesheet">
     <link rel="stylesheet" href="css/formulaire.css">
     <title></title>
   </head>
   <body>
-
+    <header class="main-header">
+        <h1 class="ml3" id="reservation">réservation</h1>
+    </header>
+    <nav class="header-nav">
+        <p><a href="">Accueil</a></p>
+        <p><a href="">Chambre</a></p>
+        <p><a href="">Contact</a></p>
+        <p><a href="#reservation">Réservation</a></p>
+    </nav>
+    <div class="container">
+      <div class="couleur1"></div>
+      <div class="couleur2"></div>
+      <div class="couleur3"></div>
+      <div class="couleur4"></div>
+      <div class="couleur5"></div>
+      <div class="couleur6"></div>
+      <form action="post">
+        <fieldset>
+          <label for="homme">Monsieur:</label> <input type="radio" name="sexe" id="homme"class="homme" /><br>
+          <label for="femme">Madame:</label> <input type="radio" name="sexe" id="femme" class="femme"/><br>
+          <label for="nom">Nom:</label> <input type="text" name="name" id="nom" class="nom"><br>
+          <label for="prenom">Prénom:</label> <input type="text" name="surname" id="prenom" class="prenom"><br>
+          <label for="tel">Tél:</label> <input type tel name="tel" id="tel" class="tel"><br>
+          <label for="email">Email:</label> <input type="email" name="mail" id="email" class="email"><br>
+          <label for="hotel">Choisissez un hôtel:</label>
+             <select name="choix hotel" id="hotel" class="hotel">
+                 <option value="charleville">Charleville</option>
+                 <option value="paris">Paris</option>
+                 <option value="lille">Lille</option>
+                 <option value="nancy">Nancy</option>
+                 <option value="rennes">Rennes</option>
+                 <option value="lyon">Lyon</option>
+                 <option value="grenoble">Grenoble</option>
+                 <option value="marseille">Marseille</option>
+             </select><br>
+          <label for="pers">Nombre de personne:</label>  <input type="number" min=1 max=5 name="surname" id="pers" class="pers"><br>
+          <label for="arriver">Date d'arrivée:</label>  <input type="date" name="surname" id="arriver" class="arriver"><br>
+          <label for="depart">Date de départ:</label> <input type="date" name="surname" id="depart" class="depart"><br>
+          <input type="submit" name="button" class="button" value="Valider">
+        </fieldset>
+    </form>
+    </div>
+<footer>footer</footer>
   </body>
 </html>
