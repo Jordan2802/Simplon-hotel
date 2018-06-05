@@ -50,11 +50,13 @@ features.forEach(function(feature) {
           var marker = new google.maps.Marker({
             position: feature.position,
             title:feature.title,
-            map: map
+            map: map,
+
           });
         });
-
+  
 }
+
         </script>
     </head>
     <body onload="initialize()">
