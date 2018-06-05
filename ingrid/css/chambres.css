@@ -131,7 +131,7 @@ background-image: url("entête.jpeg");
 
 .c1, .c3, .c5{
   background-color: #DBDDD1;
-  margin: 20px 0px 20px 40px;
+  margin: 10px 0px 10px 20px;
   display: flex;
 }
 
@@ -142,9 +142,9 @@ background-image: url("entête.jpeg");
 }
 
 .img_c1, .img_c2, .img_c3, .img_c4, .img_c5{
-  width: 450px;
+  height: 100%;
 }
 
 .c1_p2, .c2_p1, .c3_p2, .c4_p1, .c5_p2{
- margin: 10px 20px 10px 20px;
+ margin: 20px 40px 20px 40px;
 }
