@@ -1,0 +1,150 @@
+/* Teal (vert sombre) #05605F
+Crimson (rouge orangé) #E52C27
+Gainsboro (gris clair) #DBDDD1
+Slate gray (gris bronze) #5F7262
+Ligth steel blue (bleu clair) #AAD5C0 */
+
+/* font-family: 'Cormorant Garamond', serif;
+font-family: 'Proza Libre', sans-serif; */
+
+*{
+  margin: 0;
+}
+
+html{
+  text-align: center;
+  font-family: 'Proza Libre', sans-serif;
+}
+
+h1 {
+padding-top:250px;
+padding-bottom:250px;
+font-size: 4em;
+color:#ffffff;
+letter-spacing: 10px;
+-webkit-text-stroke: 2px #E52C27;
+}
+
+h2{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  font-weight:500;
+  text-transform: uppercase;
+}
+
+p{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3em;
+  text-align: justify;
+}
+
+header{
+  width: 100%;
+  background-color: #AAD5C0;
+  justify-content: center;
+}
+
+#main_title {
+background-image: url("entête.jpeg");
+}
+
+/* Menu Simplhotel */
+
+.menu {
+	line-height: 2;
+	margin: 0 auto 4em;
+}
+
+.menu__list {
+	position: relative;
+	display: flex;
+	list-style: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-family: 'Proza Libre', sans-serif;
+	display: inline-block;
+	padding: 1em;
+	cursor: pointer;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+	outline: none;
+}
+
+.menu--simplhotel .menu__item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin:0 2.25em;
+}
+
+.menu--simplhotel .menu__item::before {
+	content: '';
+	position: absolute;
+  width: 100%;
+	height: 8px;
+  border-radius:1px;
+	background: #ffffff;
+}
+
+.menu--simplhotel .menu__item.menu__item--current::before {
+
+}
+
+.menu--simplhotel .menu__link {
+	position: relative;
+	color: #000000;
+}
+
+.menu--simplhotel .menu__link:hover,
+.menu--simplhotel .menu__link:focus {
+	color: #E52C27;
+}
+
+.menu--simplhotel .menu__item.menu__item--current .menu__link {
+	color: #05605F;
+}
+
+.menu__item {
+	display: block;
+	margin: 1em 0;
+}
+
+.menu__link {
+  letter-spacing: 3px;
+	font-size: 1.3em;
+	font-weight: 500;
+	padding: 1em;
+	cursor: pointer;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+	outline: none;
+}
+
+/* ==== body ==== */
+
+.c1, .c3, .c5{
+  background-color: #DBDDD1;
+  margin: 20px 0px 20px 40px;
+  display: flex;
+}
+
+.c2, .c4{
+  background-color: #5F7262;
+  margin: 20px 40px 20px 0px;
+  display: flex;
+}
+
+.img_c1, .img_c2, .img_c3, .img_c4, .img_c5{
+  width: 450px;
+}
+
+.c1_p2, .c2_p1, .c3_p2, .c4_p1, .c5_p2{
+ margin: 10px 20px 10px 20px;
+}
