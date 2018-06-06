@@ -94,9 +94,11 @@ background-image: url("entête.jpeg");
 	content: '';
 	position: absolute;
   width: 100%;
-	height: 8px;
-  border-radius:1px;
+	height: 50px;
+  border-radius:0px;
 	background: #ffffff;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
 
 .menu--simplhotel .menu__item.menu__item--current::before {
@@ -159,7 +161,7 @@ background-image: url("entête.jpeg");
 
 /* ==== Main contact ==== */
 
-main {
+.main_contact {
   display: flex;
   justify-content: center;
 }
@@ -212,8 +214,6 @@ label > i{
 span{
   margin-right: 25px;
 }
-
-
 
 button{
   justify-content: center;
