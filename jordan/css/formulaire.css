@@ -5,7 +5,7 @@
 
 /*body *{
   border: 1px solid black;
-}*/
+}*
 /*header+nav//////////////////////////////////////////////////////////////////////*/
 
 header{
@@ -84,17 +84,23 @@ nav p:hover{
 /*formulaire/////////////////////////////////////////////////////////////////*/
 
 .container{
-  margin-top: 60px;
-  margin-bottom: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   width: 100%;
+  height: 690px;
+  background-image: url(../img/font.jpg);
+  background-position: center;
+  background-size: contain;
+
 }
+
 .text{
   width: 600px;
-  height: 200px;
+  height: 150px;
   background-color: #dbddd1;
   margin: auto;
   border: 2px solid #05605F;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 form{
   width: 600px;
@@ -136,7 +142,7 @@ input, select{
 }
 
 fieldset{
-  background-color: #5F7262;
+  background-color: rgba(95, 114, 98, 0.6);
   box-shadow: 2px 2px 10px #AAD5C0;
   padding: 10px;
   margin: auto;
@@ -152,178 +158,7 @@ fieldset{
   box-shadow: 2px 2px 2px #AAD5C0 inset;
 }
 
-/*
-.couleur1{
-  content: '';
-  width: 700px;
-  height: 550px;
-  background-color: #05605F;
-  position: absolute;
-  top: 520px;
-  left: 250px;
-  z-index: -15;
-  box-shadow: 2px 2px 10px #05605F;
-  animation-name: clr1;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-}
-.couleur2{
-  content: '';
-  width: 550px;
-  height: 450px;
-  background-color:  #DBDDD1;
-  position: absolute;
-  top: 590px;
-  left: 50px;
-  z-index: -18;
-  box-shadow: 2px 2px 10px #05605F;
-  animation-name: clr2;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-}
-.couleur3{
-  content: '';
-  width: 600px;
-  height: 450px;
-  background-color: #AAD5C0;
-  position: absolute;
-  top: 460px;
-  left: 110px;
-  z-index: -20;
-  box-shadow: 2px 2px 10px #05605F;
-  animation-name: clr3;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-}
-.couleur4{
-  content: '';
-  width: 600px;
-  height: 450px;
-  background-color: #DBDDD1;
-  position: absolute;
-  top: 520px;
-  left: 570px;
-  z-index: -15;
-  box-shadow: 2px 2px 10px #05605F;
-  animation-name: clr4;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-}
-.couleur5{
-  content: '';
-  width: 600px;
-  height: 450px;
-  background-color: #AAD5C0;
-  position: absolute;
-  top: 590px;
-  left: 650px;
-  z-index: -18;
-  box-shadow: 2px 2px 10px #05605F;
-  animation-name: clr5;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-}
-.couleur6{
-  content: '';
-  width: 550px;
-  height: 430px;
-  background-color: #05605F;
-  position: absolute;
-  top: 440px;
-  left: 580px;
-  z-index: -20;
-  box-shadow: 2px 2px 10px #05605F;
-  animation-name: clr6;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-}
-@keyframes clr1 {
-  0%{
-    top: 0;
-    left: 0;
-  }
-  50%{
-    top: 260px;
-    left: 125px;
-  }
-  100%{
-    top: 520px;
-    left: 250px;
-  }
-}
-@keyframes clr2 {
-  0%{
-    top: 0;
-    left: 100%;
-  }
-  50%{
-    top: 260px;
-    left: 125px;
-  }
-  100%{
-    top: 520px;
-    left: 250px;
-  }
-}
-@keyframes clr3 {
-  0%{
-    top: 0;
-    left: 100%;
-  }
-  50%{
-    top: 15%;
-    left: 55%;
-  }
-  100%{
-    top: 520px;
-    left: 250px;
-  }
-}
-@keyframes clr4 {
-  0%{
-    top: 0;
-    left: 100%;
-  }
-  50%{
-    top: 25%;
-    left: 50%;
-  }
-  100%{
-    top: 520px;
-    left: 570px;
-  }
-}
-@keyframes clr5 {
-  0%{
-    top: 0;
-    left: 0;
-  }
-  50%{
-    top: 295px;
-    left: 325px;
-  }
-  100%{
-    top: 590px;
-    left: 650px;
-  }
-}
-@keyframes clr6 {
-  0%{
-    top: 10px;
-    left: 100%;
-  }
-  50%{
-    top: 220px;
-    left: 290px;
-  }
-  100%{
-    top: 440px;
-    left: 580px;
-  }
-}*/
-
 /*Volet déroulant////////////////////////////////////////////////////////////*/
-
 
 #volet {
 	width: 250px;
@@ -334,7 +169,7 @@ fieldset{
   position: fixed;
   border: 2px solid white;
 	left: -270px;
-  top: 150px;
+  top: 380px;
   -webkit-transition: all .5s ease-in;
 	transition: all .5s ease-in;
 }
@@ -343,7 +178,7 @@ fieldset{
 	left: 0;
 }
 #volet a.reserv:hover{
-  color: #05605F;
+  color: #E52C27;
 }
 #volet a.ouvrir, #volet a.fermer {
   padding: 10px 15px;
