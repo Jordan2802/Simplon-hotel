@@ -13,6 +13,7 @@
 
     <title>Simplon Hôtels</title>
     <style>
+
     #map_canvas {
         height: 700px;
         width: 900px;
@@ -20,13 +21,37 @@
     }
     #hotels a {
       text-decoration: none;
+      margin-left: 130px;
+      font-size: 1.5em;
+    }
+    #hotels li {
+      margin-top: 5px;
     }
     #hotels ul {
       list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+
+    }
+    body {
+      background-color: #DBDDD1;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
       align-items: center;
     }
-
+    #hotels {
+      width: 400px;
+      height:800px;
+    }
+    #hotels h3 {
+      font-size: 1.35em;
+    }
     </style>
+
   </head>
 
   <body onload="initialize()">
@@ -46,7 +71,7 @@
   				</nav>
 		     </header>
 
-          <main >
+          <main>
               <div id="map_canvas"></div>
               <div id="hotels">
                 <h3>Nos hôtels partout en France :</h3>
@@ -71,6 +96,7 @@
                   <li><a href="#">Vannes</a></li>
                 </ul>
               </div>
+
           </main>
         <br><a href="#" class="to-top"></a><br>
 
