@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Proza+Libre" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="map.js"></script>
+
+    <title>Simplon Hôtels</title>
+    <style>
+    #map_canvas {
+        height: 700px;
+        width: 900px;
+        margin:50px auto;
+    }
+    #hotels a {
+      text-decoration: none;
+    }
+    #hotels ul {
+      list-style-type: none;
+      align-items: center;
+    }
+
+    </style>
+  </head>
+
+  <body onload="initialize()">
+		<header>
+			<div id="main_title">
+        <h1>Nos Hôtels</h1>
+      </div>
+        <!-- Menu Simplhotel -->
+          <nav class="menu menu--simplhotel">
+  					<ul class="menu__list">
+  						<li class="menu__item menu__item--current"><a href="index.html" class="menu__link">Accueil</a></li>
+  						<li class="menu__item"><a href="hotels.html" class="menu__link">Hôtels</a></li>
+  						<li class="menu__item"><a href="chambres.html" class="menu__link">Chambres</a></li>
+  						<li class="menu__item"><a href="contact.html" class="menu__link">Nous contacter</a></li>
+  						<li class="menu__item"><a href="reservation.php" class="menu__link">Réserver</a></li>
+  					</ul>
+  				</nav>
+		     </header>
+
+          <main >
+              <div id="map_canvas"></div>
+              <div id="hotels">
+                <h3>Nos hôtels partout en France :</h3>
+                <ul>
+                  <li><a href="#">Ales</a></li>
+                  <li><a href="#">Calais</a></li>
+                  <li><a href="#">Cannes</a></li>
+                  <li><a href="#">Carcassonne</a></li>
+                  <li><a href="#">Charleville</a></li>
+                  <li><a href="#">Epinal</a></li>
+                  <li><a href="#">Marseille</a></li>
+                  <li><a href="#">Montpellier</a></li>
+                  <li><a href="#">Moulins</a></li>
+                  <li><a href="#">Narbonne</a></li>
+                  <li><a href="#">Nancy</a></li>
+                  <li><a href="#">Paris</a></li>
+                  <li><a href="#">Pau</a></li>
+                  <li><a href="#">Rennes</a></li>
+                  <li><a href="#">Roanne</a></li>
+                  <li><a href="#">Rodez</a></li>
+                  <li><a href="#">Tulle</a></li>
+                  <li><a href="#">Vannes</a></li>
+                </ul>
+              </div>
+          </main>
+        <br><a href="#" class="to-top"></a><br>
+
+        <footer>
+          <div id="left">
+            <div class="coordonnees">
+              <i class="fas fa-home"></i>
+              <p class="text_footer">Adresse</p>
+            </div>
+            <p class="text_footer_left">Simplon.co – 55 Rue de Vincennes – 93 100 Montreuil</p>
+            <div class="coordonnees">
+              <i class="fas fa-phone-volume"></i>
+              <p class="text_footer">Téléphone</p>
+            </div>
+            <p class="text_footer_left">01 86 95 64 53</p>
+            <div class="coordonnees">
+              <i class="fas fa-at"></i>
+              <p class="text_footer">E-mail</p>
+            </div>
+            <p class="text_footer_left">inbox@simplon.co</p>
+          </div>
+          <div id="right">
+            <div id="aboutus">
+              <h3>À Propos</h3>
+              <p>Procedente igitur mox tempore cum adventicium nihil inveniretur, relicta ora maritima in Lycaoniam adnexam Isauriae se contulerunt ibique densis intersaepientes itinera praetenturis </p>
+            </div>
+            <div id="resos">
+              <a href="#" class="fab fa-facebook"></a>
+              <a href="#" class="fab fa-twitter-square"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-discord"></a>
+            </div>
+          </div>
+        </footer>
+
+  </body>
+</html>
