@@ -33,6 +33,14 @@ h2{
   text-transform: uppercase;
 }
 
+h3{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  font-weight:500;
+  text-transform: uppercase;
+}
+
 p{
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.3em;
@@ -153,7 +161,7 @@ background-image: url("entête.jpeg");
 
 .to-top{
 	color:#000000;
-	padding-top:1.8em;
+	padding-top:1.5em;
 	display:inline-block;/* or block */
 	position:relative;
 	border-color:#000000;
@@ -183,4 +191,73 @@ background-image: url("entête.jpeg");
 }
 .to-top:hover:before{
 	transform: rotate(360deg);
+}
+
+/* **************************footer********************** */
+
+footer{
+  background-image: radial-gradient(circle at top left, #DBDDD1, #AAD5C0);
+  display: flex;
+}
+
+#left {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:stretch;
+}
+
+#right {
+  flex:1;
+  height:300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:stretch;
+}
+
+#resos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#right h3 {
+  text-align: left;
+}
+
+.text_footer {
+  font-family: 'Proza Libre', sans-serif;
+  font-size: 1.3rem;
+  text-align: justify;
+  padding-left: 25px;
+}
+
+.text_footer_left {
+  margin-left:50px;
+}
+
+footer .fas {
+  font-size: 1.6em;
+}
+
+.fab {
+  letter-spacing: 30px;
+  text-decoration: none;
+  font-size: 3em;
+  margin-right: : 25px;
+  color: #000;
+}
+
+.coordonnees {
+  display: flex;
+  margin-left: 50px;
+  margin-top:15px;
+}
+
+#aboutus {
+  display: flex;
+  margin-right: 50px;
+  flex-direction: column;
 }
