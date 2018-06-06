@@ -1,0 +1,84 @@
+/* ==== Master ==== */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Proza Libre', sans-serif;
+}
+
+/* ==== Header  ==== */
+
+header{
+  background-color: #05605F;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px
+}
+
+h1{
+  color: white;
+}
+
+/* ==== Nav  ==== */
+/* ==== Main  ==== */
+
+main{
+  display: flex;
+  justify-content: center;
+}
+
+section{
+  background-color: #AAD5C0;
+  padding: 100px 125px 100px 125px;
+}
+
+#name, #email, #phone{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 230px;
+  height: 30px;
+}
+
+#info{
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 230px;
+  height: 150px;
+}
+
+label > i{
+  margin-right: 10px;
+}
+
+span{
+  margin-right: 20px;
+}
+
+form{
+  text-align: right;
+}
+
+button{
+	border:none;
+	padding:6px 3px 6px 3px;
+	border-radius:8px;
+	background:#05605F;
+	font:bold 13px Arial;
+	color:#fff;
+}
+
+/* ==== Footer  ==== */
+
+footer{
+  background-color: #05605F;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px
+}
