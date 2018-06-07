@@ -22,8 +22,7 @@ var features = [
       '</div>'+
       '<h3 id="firstHeading" class="firstHeading">HOTEL SIMPLON CHARLEVILLE</h3>'+
       '<div id="bodyContent">'+
-      '<p><img src="hotel.jpeg">bla bla bla bla bla bla '+
-      'bla bla bla.</p>'+
+      '<p><img src="hotel.jpeg">Rue de la paix, 00000 VILLE </p>'+
       '<p><a href="https://www.simplon.co" target="blank">site web de l hôtel</a></p>'+
       '</div>'+
       '</div>'},
@@ -34,8 +33,7 @@ var features = [
       '</div>'+
       '<h3 id="firstHeading" class="firstHeading">HOTEL SIMPLON TULLE</h3>'+
       '<div id="bodyContent">'+
-      '<p><img src="hotel.jpeg">bla bla bla bla bla bla '+
-      'bla bla bla.</p>'+
+      '<p><img src="hotel.jpeg"></p><p>Rue de la paix, 00000 VILLE </p>'+
       '<p><a href="https://www.simplon.co" target="blank">site web de l hôtel</a></p>'+
       '</div>'+
       '</div>'},
