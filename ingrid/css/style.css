@@ -190,7 +190,7 @@ background-image: url("entête.jpeg");
   justify-content: center;
 }
 
-form {
+.form {
   background:#DBDDD1;
   padding: 100px 125px 100px 125px;
   font-family: 'Cormorant Garamond', serif;
@@ -199,13 +199,13 @@ form {
   border-radius:1px;
 }
 
-form .fas {
+.form .fas {
   font-size: 1.6em;
   float:left;
   justify-content: left;
 }
 
-form .far {
+.form .far {
   font-size: 1.6em;
   float:left;
   justify-content: left;
@@ -294,6 +294,68 @@ button{
 	transform: rotate(360deg);
 }
 
+/*formulaire de réservation/////////////////////////////////////////////////////////////////*/
+
+.container_reservation {
+  display: block;
+  padding: 100px 275px 100px 275px;
+  background-image: url(../img/font.jpg);
+  background-repeat: no-repeat;
+  border-radius:1px;
+}
+
+.text_reservation{
+  background-color: rgba(95, 114, 98, 0.6);
+  color: #AAD5C0;
+  margin: auto;
+  border: 2px solid #AAD5C0;
+  box-shadow: 2px 2px 10px #AAD5C0;
+  text-align: justify;
+  padding:25px 100px 25px 100px;
+}
+
+.form_reservation{
+  background-color:rgba(219, 221, 209,0.5);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3em;
+  color: #000000;
+  border-radius:1px;
+  text-align:left;
+  justify-content: left;
+  padding:50px 100px 50px 100px;
+}
+
+fieldset{
+  background-color: rgba(95, 114, 98, 0.6);
+  box-shadow: 2px 2px 10px #AAD5C0;
+  max-width:175%;
+}
+
+.align_reservation {
+}
+
+.button_reservation {
+	border-radius:1px;
+	font:1.4em;
+  font-family: 'Proza Libre', sans-serif;
+  color:#ffffff;
+  line-height: 1;
+  margin-top: 15px;
+  padding: 1em 4em;
+  background: none;
+  border: 2px solid;
+}
+
+.button_reservation:hover{
+  color:#000;
+  box-shadow: 2px 2px 1px 1px #AAD5C0;
+}
+
+.label_reservation {
+
+}
+
+
 /* **************************footer********************** */
 
 footer{
@@ -349,6 +411,11 @@ footer .fas {
   font-size: 3em;
   margin-right: : 25px;
   color: #000;
+}
+
+.fab:hover{
+  transform: rotate(360deg);
+  transition: 1s;
 }
 
 .coordonnees {
