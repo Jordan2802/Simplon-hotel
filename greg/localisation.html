@@ -50,13 +50,20 @@
     #hotels h3 {
       font-size: 1.35em;
     }
+    #main_title_hotels {
+    background-image: url("simplonhotel.jpg");
+    background-size: 100%;
+    }
+    #titre_hotels {
+      font-size: 2em;
+    }
     </style>
 
   </head>
 
   <body onload="initialize()">
 		<header>
-			<div id="main_title">
+			<div id="main_title_hotels">
         <h1>Nos Hôtels</h1>
       </div>
         <!-- Menu Simplhotel -->
@@ -72,6 +79,7 @@
 		     </header>
 
           <main>
+              <h2 id="titre_hotels">Selectionnez votre Hôtel sur la carte :</h2>
               <div id="map_canvas"></div>
               <div id="hotels">
                 <h3>Nos hôtels partout en France :</h3>
