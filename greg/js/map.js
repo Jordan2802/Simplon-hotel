@@ -11,9 +11,8 @@ var features = [
       '</div>'+
       '<h3 id="firstHeading" class="firstHeading">HOTEL SIMPLON NANCY</h3>'+
       '<div id="bodyContent">'+
-      '<p><img src="hotel.jpeg">bla bla bla bla bla bla '+
-      'bla bla bla.</p>'+
-      '<p>bla bla bla<a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">site web de l hôtel</a></p>'+
+      '<p><img src="hotel.jpeg">Rue de la paix, 00000 VILLE </p>'+
+      '<p><a href="https://www.simplon.co" target="blank">site web de l hôtel</a></p>'+
       '</div>'+
       '</div>'},
       {position: new google.maps.LatLng(48.856614,2.352222), title: 'Paris'},
@@ -25,7 +24,7 @@ var features = [
       '<div id="bodyContent">'+
       '<p><img src="hotel.jpeg">bla bla bla bla bla bla '+
       'bla bla bla.</p>'+
-      '<p>bla bla bla<a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">site web de l hôtel</a></p>'+
+      '<p><a href="https://www.simplon.co" target="blank">site web de l hôtel</a></p>'+
       '</div>'+
       '</div>'},
       {position: new google.maps.LatLng(48.117266,-1.677793), title: 'Rennes'},
@@ -37,7 +36,7 @@ var features = [
       '<div id="bodyContent">'+
       '<p><img src="hotel.jpeg">bla bla bla bla bla bla '+
       'bla bla bla.</p>'+
-      '<p>bla bla bla<a href="https://www.simplon.co">site web de l hôtel</a></p>'+
+      '<p><a href="https://www.simplon.co" target="blank">site web de l hôtel</a></p>'+
       '</div>'+
       '</div>'},
       {position: new google.maps.LatLng(43.2951,-0.370797), title: 'Pau'},
@@ -67,7 +66,7 @@ features.forEach(function(feature) {
 
   marker.addListener('click', function() {
     infowindow.open(map, marker);
-    
+
   });
 
     });
