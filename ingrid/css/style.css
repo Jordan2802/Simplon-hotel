@@ -159,6 +159,30 @@ background-image: url("entête.jpeg");
  margin: 20px 40px 20px 40px;
 }
 
+.infos_sup_clair {
+  font-family: 'Proza Libre', sans-serif;
+  font-size: 1.1em;
+  text-align: justify;
+  font-weight: lighter;
+  float:left;
+  text-decoration: none;
+  color:#E52C27;
+  letter-spacing: 3px;
+  margin-bottom:5px;
+}
+
+.infos_sup_foncé {
+  font-family: 'Proza Libre', sans-serif;
+  font-size: 1.1em;
+  text-align: justify;
+  font-weight: lighter;
+  float:left;
+  text-decoration: none;
+  color:#ffffff;
+  letter-spacing: 3px;
+  margin-bottom:5px;
+}
+
 /* ==== Main contact ==== */
 
 .main_contact {
