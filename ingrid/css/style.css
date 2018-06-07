@@ -87,18 +87,18 @@ background-image: url("entête.jpeg");
 	position: relative;
 	display: flex;
 	align-items: center;
-	margin:0 2.25em;
+	margin:0 3.75em;
 }
 
 .menu--simplhotel .menu__item::before {
 	content: '';
 	position: absolute;
-  width: 100%;
-	height: 50px;
-  border-radius:0px;
+  width: 10px;
+	height: 10px;
 	background: #ffffff;
-  border-bottom-left-radius: 50%;
-  border-top-right-radius: 50%;
+  border-radius: 50%;
+  border-style: double;
+  border-color: #000;
 }
 
 .menu--simplhotel .menu__item.menu__item--current::before {
@@ -125,7 +125,7 @@ background-image: url("entête.jpeg");
 }
 
 .menu__link {
-  letter-spacing: 3px;
+  letter-spacing: -2px;
 	font-size: 1.3em;
 	font-weight: 500;
 	padding: 1em;
