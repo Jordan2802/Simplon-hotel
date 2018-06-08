@@ -16,6 +16,9 @@
     .main_contact {
       height: 600px;
     }
+    .main_contact p {
+      margin-left: 50px;
+    }
     </style>
   </head>
 
