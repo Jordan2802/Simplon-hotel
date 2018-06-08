@@ -130,8 +130,8 @@ header {
   margin-bottom:5px;
 }
 #hotels {
-  box-shadow: 2px 2px 10px #AAD5C0;
-  background-image: radial-gradient(circle at top left, #AAD5C0, #fff, #AAD5C0)
+  box-shadow: 2px 2px 10px #DBDDD1;
+  background-image: radial-gradient(circle at top left, #DBDDD1, #DBDDD1, #ffffff, #ffffff, #ffffff);
 }
 #cut {
   display: flex;
