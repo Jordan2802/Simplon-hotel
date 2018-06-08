@@ -29,33 +29,43 @@
           <a href="#volet_clos" class="fermer">fermer !</a>
         </div>
       </div>
-      <form action="post">
+      <form action="post" action="reponse.js" onsubmit="return vide()">
         <fieldset>
           <div class="sexe">
-            <label for="homme">Monsieur:</label> <input type="radio" name="sexe" id="homme"class="homme" />
-            <label for="femme">Madame:</label> <input type="radio" name="sexe" id="femme" class="femme"/><br>
+            <label for="homme">Monsieur:</label> <input type="radio" name="sexe" id="homme" value="homme" class="homme" />
+            <label for="femme">Madame:</label> <input type="radio" name="sexe" id="femme" value="femme" class="femme"/><br>
           </div>
         <div class="align">
-          <label for="nom">Nom:</label> <input type="text" name="name" id="nom" class="nom"><br>
-          <label for="prenom">Prénom:</label> <input type="text" name="surname" id="prenom" class="prenom"><br>
-          <label for="tel">Tél:</label> <input type tel name="tel" id="tel" class="tel"><br>
+          <label for="nom">Nom:</label> <input type="text" name="name" id="nom" class="nom" onclick="vide" ><br>
+          <label for="prenom">Prénom:</label> <input type="text" name="surname" id="prenom" class="prenom" onclick="vide" ><br>
+          <label for="tel">Tél:</label> <input type="tel" name="tel" id="tel" value="tel" class="tel"><br>
           <label for="email">Email:</label> <input type="email" name="mail" id="email" class="email"><br>
           <label for="hotel">Choisissez un hôtel:</label>
              <select name="choix hotel" id="hotel" class="hotel">
-                 <option value="charleville">Charleville</option>
-                 <option value="paris">Paris</option>
-                 <option value="lille">Lille</option>
-                 <option value="nancy">Nancy</option>
-                 <option value="rennes">Rennes</option>
-                 <option value="lyon">Lyon</option>
-                 <option value="grenoble">Grenoble</option>
-                 <option value="marseille">Marseille</option>
+                 <option value="Ales">Ales</option>
+                 <option value="Calais">Calais</option>
+                 <option value="Cannes">Cannes</option>
+                 <option value="Carcassonne">Carcassonne</option>
+                 <option value="Charleville">Charleville</option>
+                 <option value="Epinal">Epinal</option>
+                 <option value="Marseille">Marseille</option>
+                 <option value="Montpellier">Montpellier</option>
+                 <option value="Moulins">Moulins</option>
+                 <option value="Narbonne">Narbonne</option>
+                 <option value="Nancy">Nancy</option>
+                 <option value="Paris">Paris</option>
+                 <option value="Pau">Pau</option>
+                 <option value="Rennes">Rennes</option>
+                 <option value="Roanne">Roanne</option>
+                 <option value="Rodez">Rodez</option>
+                 <option value="Tulle">Tulle</option>
+                 <option value="Vannes">Vannes</option>
              </select><br>
           <label for="pers">Nombre de personne:</label>  <input type="number" min=1 max=5 name="surname" id="pers" class="pers"><br>
           <label for="arriver">Date d'arrivée:</label>  <input type="date" name="surname" id="arriver" class="arriver"><br>
           <label for="depart">Date de départ:</label> <input type="date" name="surname" id="depart" class="depart"><br>
         </div>
-          <input type="button" name="button" class="button" value="Valider" onclick="alert('réservation effectuée')">
+          <input type="submit" name="button" class="button" value="Valider" >
         </fieldset>
     </form>
     </div>
