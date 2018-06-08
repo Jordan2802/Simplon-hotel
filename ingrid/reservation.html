@@ -34,30 +34,19 @@
              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
            </div>
 
-
-           <div id="volet_clos">
-             <div id="volet">
-               <p>Pour réserver une chambre dans un de nos nombreux hotels, rien de plus simple</p><br>
-               <p><a href="#reservation" class="reserv_reservation">Cliquez ici</a> maintenant</p>
-               <a href="#volet" class="ouvrir_reservation">Réserver !</a>
-               <a href="#volet_clos" class="fermer_reservation">fermer !</a>
-             </div>
-           </div>
-
-
            <form action="post" class="form_reservation">
              <fieldset>
                <div class="sexe_reservation">
-                 <label for="homme">Monsieur:</label> <input type="radio" name="sexe" id="homme"class="homme_reservation" />
-                 <label for="femme">Madame:</label> <input type="radio" name="sexe" id="femme" class="femme_reservation"/><br>
-               </div>
+                 <br><label class="label_reservation" for="homme">Monsieur :</label> <input type="radio" name="sexe" id="homme"class="homme_reservation" />
+                 <label class="label_reservation" for="femme">Madame :</label> <input type="radio" name="sexe" id="femme" class="femme_reservation"/><br>
+               </div><br>
              <div class="align_reservation">
-               <label for="nom">Nom:</label> <input type="text" name="name" id="nom" class="nom_reservation"><br>
-               <label for="prenom">Prénom:</label> <input type="text" name="surname" id="prenom" class="prenom_reservation"><br>
-               <label for="tel">Tél:</label> <input type tel name="tel" id="tel" class="tel_reservation"><br>
-               <label for="email">Email:</label> <input type="email" name="mail" id="email" class="email_reservation"><br>
-               <label for="hotel">Choisissez un hôtel:</label>
-                  <select name="choix hotel" id="hotel" class="hotel_reservation">
+               <label class="label_reservation" for="nom">Nom :</label> <input type="text" name="name" id="nom" class="input_reservation"><br>
+               <br><label class="label_reservation" for="prenom">Prénom :</label> <input type="text" name="surname" id="prenom" class="input_reservation"><br>
+               <br><label class="label_reservation" for="tel">Tél :</label> <input type="tel" name="tel" id="tel" class="input_reservation"><br>
+
+               <br><label class="label_reservation" for="hotel">Choisissez un hôtel :</label>
+                  <select name="choix hotel" id="hotel" class="select_reservation">
                       <option value="charleville">Charleville</option>
                       <option value="paris">Paris</option>
                       <option value="lille">Lille</option>
@@ -67,11 +56,11 @@
                       <option value="grenoble">Grenoble</option>
                       <option value="marseille">Marseille</option>
                   </select><br>
-               <label for="pers">Nombre de personne:</label>  <input type="number" min=1 max=5 name="surname" id="pers" class="pers_reservation"><br>
-               <label for="arriver">Date d'arrivée:</label>  <input type="date" name="surname" id="arriver" class="arriver_reservation"><br>
-               <label for="depart">Date de départ:</label> <input type="date" name="surname" id="depart" class="depart_reservation"><br>
+               <br><label class="label_reservation" for="pers">Nombre de personne :</label>  <input type="number" min=1 max=5 name="surname" id="pers" class="input_reservation"><br>
+               <br><label class="label_reservation" for="arriver">Date d'arrivée :</label>  <input type="date" name="surname" id="arriver" class="input_reservation"><br>
+               <br><label class="label_reservation" for="depart">Date de départ :</label> <input type="date" name="surname" id="depart" class="input_reservation"><br>
              </div>
-               <br><center><input type="button" name="button" class="button_reservation" value="Valider" onclick="alert('réservation effectuée')"></center>
+               <br><center><input type="button" name="button" class="button_reservation" value="Valider" onclick="alert('réservation effectuée')"></center><br>
              </fieldset>
            </form>
          </div>
