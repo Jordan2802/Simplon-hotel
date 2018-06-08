@@ -138,6 +138,61 @@ background-image: url("entête.jpeg");
 	outline: none;
 }
 
+/* ==== body hôtels ==== */
+
+.main_hotel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hotels {
+  width: 400px;
+  height:500px;
+}
+
+#hotels h3 {
+  font-size: 1.35em;
+}
+
+#main_title_hotels {
+  background-image: url("entete.jpeg");
+  background-size:cover ;
+  background-repeat: no-repeat;
+}
+
+#titre_hotels {
+  font-size: 2em;
+}
+
+#cut {
+  display: flex;
+  justify-content: space-between;
+}
+
+#map_canvas {
+  height: 700px;
+  width: 900px;
+  margin:50px auto;
+}
+
+#hotels a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1.5em;
+}
+
+#hotels li {
+  margin-top: 5px;
+}
+
+#hotels ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 /* ==== body chambres ==== */
 
 .c1, .c3, .c5{
@@ -257,6 +312,10 @@ button{
   padding: 1em 4em;
   background: none;
   border: 2px solid;
+}
+
+button:hover{
+
 }
 
 /* ==== back to top ==== */
