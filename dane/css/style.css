@@ -1,0 +1,394 @@
+/* Teal (vert sombre) #05605F
+Crimson (rouge orangé) #E52C27
+Gainsboro (gris clair) #DBDDD1
+Slate gray (gris bronze) #5F7262
+Ligth steel blue (bleu clair) #AAD5C0 */
+
+/* font-family: 'Cormorant Garamond', serif;
+font-family: 'Proza Libre', sans-serif; */
+
+*{
+  margin: 0;
+}
+
+html{
+  text-align: center;
+  font-family: 'Proza Libre', sans-serif;
+}
+
+h1 {
+padding-top:250px;
+padding-bottom:250px;
+font-size: 4em;
+color:#ffffff;
+letter-spacing: 10px;
+-webkit-text-stroke: 2px #E52C27;
+}
+
+h2{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  font-weight:500;
+  text-transform: uppercase;
+}
+
+h3{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  font-weight:500;
+  text-transform: uppercase;
+}
+
+p{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3em;
+  text-align: justify;
+}
+
+header{
+  width: 100%;
+  background-color: #AAD5C0;
+  justify-content: center;
+}
+
+#main_title {
+background-image: url("entête.jpeg");
+}
+
+/* Menu Simplhotel */
+
+.menu {
+	line-height: 2;
+	margin: 0 auto 4em;
+}
+
+.menu__list {
+	position: relative;
+	display: flex;
+	list-style: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-family: 'Proza Libre', sans-serif;
+	display: inline-block;
+	padding: 1em;
+	cursor: pointer;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+	outline: none;
+}
+
+.menu--simplhotel .menu__item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin:0 3.75em;
+}
+
+.menu--simplhotel .menu__item::before {
+	content: '';
+	position: absolute;
+  width: 10px;
+	height: 10px;
+	background: #ffffff;
+  border-radius: 50%;
+  border-style: double;
+  border-color: #000;
+}
+
+.menu--simplhotel .menu__item.menu__item--current::before {
+
+}
+
+.menu--simplhotel .menu__link {
+	position: relative;
+	color: #000000;
+}
+
+.menu--simplhotel .menu__link:hover,
+.menu--simplhotel .menu__link:focus {
+	color: #E52C27;
+}
+
+.menu--simplhotel .menu__item.menu__item--current .menu__link {
+	color: #05605F;
+}
+
+.menu__item {
+	display: block;
+	margin: 1em 0;
+}
+
+.menu__link {
+  letter-spacing: -2px;
+	font-size: 1.3em;
+	font-weight: 500;
+	padding: 1em;
+	cursor: pointer;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+	outline: none;
+}
+
+/* ==== body chambres ==== */
+
+.c1, .c3, .c5{
+  background-color: #DBDDD1;
+  margin: 10px 0px 10px 20px;
+  display: flex;
+}
+
+.c2, .c4{
+  background-color: #5F7262;
+  margin: 20px 40px 20px 0px;
+  display: flex;
+}
+
+.img_c1, .img_c2, .img_c3, .img_c4, .img_c5{
+  height: 100%;
+}
+
+.c1_p2, .c2_p1, .c3_p2, .c4_p1, .c5_p2{
+ margin: 20px 40px 20px 40px;
+}
+
+.infos_sup_clair {
+  font-family: 'Proza Libre', sans-serif;
+  font-size: 1.1em;
+  text-align: justify;
+  font-weight: lighter;
+  float:left;
+  text-decoration: none;
+  color:#E52C27;
+  letter-spacing: 3px;
+  margin-bottom:5px;
+}
+
+.infos_sup_foncé {
+  font-family: 'Proza Libre', sans-serif;
+  font-size: 1.1em;
+  text-align: justify;
+  font-weight: lighter;
+  float:left;
+  text-decoration: none;
+  color:#DBDDD1;
+  letter-spacing: 3px;
+  margin-bottom:5px;
+}
+
+/* ==== Main contact ==== */
+
+.main_contact {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background:#DBDDD1;
+  padding: 100px 125px 100px 125px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3em;
+  text-align: right;
+  border-radius:1px;
+}
+
+form .fas {
+  font-size: 1.6em;
+  float:left;
+  justify-content: left;
+}
+
+form .far {
+  font-size: 1.6em;
+  float:left;
+  justify-content: left;
+}
+
+#name, #email, #phone{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 300px;
+  height: 30px;
+}
+
+textarea {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.0em;
+  color:black;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 5px;
+width:90%;
+height:200px;
+padding-top: 15px;
+padding-left: 50px;
+}
+
+label > i{
+  margin-right: 25px;
+}
+
+span{
+  margin-right: 25px;
+}
+
+button{
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  width: 25%;
+	border-radius:1px;
+	background:;
+	font:1.4em;
+  font-family: 'Proza Libre', sans-serif;
+	color:#000000;
+  line-height: 1;
+  margin-top: 15px;
+  padding: 1em 4em;
+  background: none;
+  border: 2px solid;
+}
+
+/* ==== back to top ==== */
+
+.to-top{
+	color:#000000;
+	padding-top:1.5em;
+	display:inline-block;/* or block */
+	position:relative;
+	border-color:#000000;
+	text-decoration:none;
+	transition:all .3s ease-out;
+}
+.to-top:before{
+	content:'▲';
+	font-size:2.5em;
+  font-weight: lighter;
+  font-family: 'Proza Libre', sans-serif;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-.7em;
+	border:solid .07em black;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.to-top:hover{
+	color:#E52C27;
+	border-color:#E52C27;
+}
+.to-top:hover:before{
+	transform: rotate(360deg);
+}
+
+/*formulaire de réservation/////////////////////////////////////////////////////////////////*/
+
+.container_reservation {
+  display: block;
+  padding: 100px 125px 300px 100px;
+  background-image: url(../img/font.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text_reservation{
+  background-color: rgba(95, 114, 98, 0.6);
+  color: #AAD5C0;
+  margin: auto;
+  border: 2px solid #AAD5C0;
+  box-shadow: 2px 2px 10px #AAD5C0;
+  text-align: justify;
+}
+
+form .form_reservation{
+  max-width: 300px;
+  height: auto;
+  margin:auto;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #AAD5C0;
+}
+
+/* **************************footer********************** */
+
+footer{
+  background-image: radial-gradient(circle at top left, #DBDDD1, #AAD5C0);
+  display: flex;
+}
+
+#left {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:stretch;
+}
+
+#right {
+  flex:1;
+  height:300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:stretch;
+}
+
+#resos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#right h3 {
+  text-align: left;
+}
+
+.text_footer {
+  font-family: 'Proza Libre', sans-serif;
+  font-size: 1.3rem;
+  text-align: justify;
+  padding-left: 25px;
+}
+
+.text_footer_left {
+  margin-left:50px;
+}
+
+footer .fas {
+  font-size: 1.6em;
+}
+
+.fab {
+  letter-spacing: 30px;
+  text-decoration: none;
+  font-size: 3em;
+  margin-right: : 25px;
+  color: #000;
+}
+
+.coordonnees {
+  display: flex;
+  margin-left: 50px;
+  margin-top:15px;
+}
+
+#aboutus {
+  display: flex;
+  margin-right: 50px;
+  flex-direction: column;
+}
