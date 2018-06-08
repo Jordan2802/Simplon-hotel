@@ -9,6 +9,14 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="../css/style.css" />
     <title>Simplon Hôtels</title>
+    <style>
+    body {
+      background-color: #DBDDD1;
+    }
+    .main_contact {
+      height: 600px;
+    }
+    </style>
   </head>
 
   <body>
