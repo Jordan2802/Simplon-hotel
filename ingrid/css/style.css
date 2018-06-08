@@ -137,7 +137,101 @@ background-image: url("entête.jpeg");
 .menu__link:focus {
 	outline: none;
 }
+/* ==== Carrousel ==== */
 
+
+div#slider {
+   width: 80%;
+   max-width: 1000px;
+   margin: auto;
+   margin-bottom: 50px;
+  }
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+}
+div#slider figure img {
+  width: 20%;
+  height: 708px;
+  float: left;
+}
+div#slider {
+  width: 80%;
+  max-width: 1000px;
+  overflow: hidden;
+
+}
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  30% { left: -100%; }
+  40% { left: -100%; }
+  50% { left: -200%; }
+  60% { left: -200%; }
+  70% { left: -300%; }
+  80% { left: -300%; }
+  90% { left: -400%; }
+  100% { left: -400%; }
+}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: left;
+  animation: 20s slidy infinite;
+  animation-direction:alternate;
+}
+/*=================body Accueil================*/
+article{
+  margin-bottom: 30px;
+  border: 1px solid black;
+}
+
+.galery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+.img a{
+  position: relative;
+  bottom: 300px;
+}
+.img:hover p{
+  opacity: 1;
+  transition: 0.5s;
+}
+a > p{
+  font-size: 1.8em;
+  padding-top: 125px;
+  font-weight:500;
+  font-family: 'Proza Libre', sans-serif;
+  color: white;
+  text-shadow: 3px 3px 1px black;
+  opacity: 0;
+  transition: 0.5s;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a{
+  text-decoration: none;
+
+}
 /* ==== body hôtels ==== */
 
 .main_hotel {
