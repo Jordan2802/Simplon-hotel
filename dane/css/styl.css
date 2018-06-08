@@ -1,0 +1,144 @@
+/* ==== Master ==== */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Proza Libre', sans-serif;
+}
+
+
+p{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+}
+
+
+main{
+background-color:#05605F;
+}
+/* ==== Header ==== */
+
+header{
+  background-color: #05605F;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* ==== Nav ==== */
+/* ==== Body ==== */
+
+.photo{
+  background-color: blue;
+  height: 600px;
+  width: 100%;
+}
+
+.text{
+  background-color: #AAD5C0;
+  padding: 30px 35px 30px 35px;
+  margin-bottom: 50px;
+}
+
+.text > p{
+  text-align: center;
+  color: white;
+}
+
+/* ==== Carrousel ==== */
+
+
+div#slider {
+   width: 80%;
+   max-width: 1000px;
+   margin: auto;
+   margin-bottom: 50px;
+  }
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+}
+div#slider figure img {
+  width: 20%;
+  height: 708px;
+  float: left;
+}
+div#slider {
+  width: 80%;
+  max-width: 1000px;
+  overflow: hidden;
+
+}
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  30% { left: -100%; }
+  40% { left: -100%; }
+  50% { left: -200%; }
+  60% { left: -200%; }
+  70% { left: -300%; }
+  80% { left: -300%; }
+  90% { left: -400%; }
+  100% { left: -400%; }
+}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: left;
+  animation: 20s slidy infinite;
+  animation-direction:alternate;
+}
+
+/* ====  ==== */
+
+.galery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-image: url(../img/img_test.png);
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+.img:hover{
+
+}
+
+a > p{
+  font-size: 2.5rem;
+  padding-top: 125px;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* ==== Footer ==== */
+
+footer{
+  background-color: #05605F;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}

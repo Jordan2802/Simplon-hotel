@@ -22,8 +22,7 @@ padding-bottom:250px;
 font-size: 4em;
 color:#ffffff;
 letter-spacing: 10px;
-text-shadow: 3px 3px 2px #E52C27;
-background-color:rgba(95, 114, 98,0.3);
+-webkit-text-stroke: 2px #E52C27;
 }
 
 h2{
@@ -138,61 +137,6 @@ background-image: url("entête.jpeg");
 	outline: none;
 }
 
-/* ==== body hôtels ==== */
-
-.main_hotel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#hotels {
-  width: 400px;
-  height:500px;
-}
-
-#hotels h3 {
-  font-size: 1.35em;
-}
-
-#main_title_hotels {
-  background-image: url("entete.jpeg");
-  background-size:cover ;
-  background-repeat: no-repeat;
-}
-
-#titre_hotels {
-  font-size: 2em;
-}
-
-#cut {
-  display: flex;
-  justify-content: space-between;
-}
-
-#map_canvas {
-  height: 700px;
-  width: 900px;
-  margin:50px auto;
-}
-
-#hotels a {
-  text-decoration: none;
-  margin-left: 20px;
-  font-size: 1.5em;
-}
-
-#hotels li {
-  margin-top: 5px;
-}
-
-#hotels ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 /* ==== body chambres ==== */
 
 .c1, .c3, .c5{
@@ -246,7 +190,7 @@ background-image: url("entête.jpeg");
   justify-content: center;
 }
 
-.form {
+form {
   background:#DBDDD1;
   padding: 100px 125px 100px 125px;
   font-family: 'Cormorant Garamond', serif;
@@ -255,13 +199,13 @@ background-image: url("entête.jpeg");
   border-radius:1px;
 }
 
-.form .fas {
+form .fas {
   font-size: 1.6em;
   float:left;
   justify-content: left;
 }
 
-.form .far {
+form .far {
   font-size: 1.6em;
   float:left;
   justify-content: left;
@@ -314,10 +258,6 @@ button{
   border: 2px solid;
 }
 
-button:hover{
-
-}
-
 /* ==== back to top ==== */
 
 .to-top{
@@ -358,10 +298,11 @@ button:hover{
 
 .container_reservation {
   display: block;
-  padding: 100px 275px 100px 275px;
+  padding: 100px 125px 300px 100px;
   background-image: url(../img/font.jpg);
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
-  border-radius:1px;
 }
 
 .text_reservation{
@@ -371,70 +312,17 @@ button:hover{
   border: 2px solid #AAD5C0;
   box-shadow: 2px 2px 10px #AAD5C0;
   text-align: justify;
-  padding:25px 100px 25px 100px;
 }
 
-.form_reservation{
-  background-color:rgba(219, 221, 209,0.5);
+form .form_reservation{
+  max-width: 300px;
+  height: auto;
+  margin:auto;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.3em;
-  color: #000000;
-  margin-top:25px;
-  border-radius:1px;
-  text-align:left;
-  justify-content: left;
-  padding:50px 100px 50px 100px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #AAD5C0;
 }
-
-fieldset{
-  background-color: rgba(95, 114, 98, 0.6);
-  box-shadow: 2px 2px 10px #AAD5C0;
-  max-width:175%;
-}
-
-.input_reservation {
-  float: right;
-margin-right: 25px;
-width:250px;
-height: 30px;
-font:1.4em;
-font-family: 'Proza Libre', sans-serif;
-}
-
-.label_reservation {
-padding-left:25px;
-}
-
-.select_reservation {
-  width:269px;
-  height: 37px;
-  float: right;
-margin-right: 25px;
-font:1.4em;
-font-family: 'Proza Libre', sans-serif;
-}
-
-.button_reservation {
-	border-radius:1px;
-	font:1.4em;
-  font-family: 'Proza Libre', sans-serif;
-  color:#ffffff;
-  line-height: 1;
-  margin-top: 15px;
-  padding: 1em 4em;
-  background: none;
-  border: 2px solid;
-}
-
-.button_reservation:hover{
-  color:#000;
-  box-shadow: 2px 2px 1px 1px #AAD5C0;
-}
-
-.label_reservation {
-
-}
-
 
 /* **************************footer********************** */
 
@@ -491,11 +379,6 @@ footer .fas {
   font-size: 3em;
   margin-right: : 25px;
   color: #000;
-}
-
-.fa-facebook:hover, .fa-twitter-square:hover, .fa-instagram:hover, .fa-discord:hover{
-  transform: rotate(360deg);
-  transition: 1s;
 }
 
 .coordonnees {

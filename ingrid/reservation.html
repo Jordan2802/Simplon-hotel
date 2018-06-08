@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Proza+Libre" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simplon Hôtels</title>
+  </head>
+
+  <body>
+		<header>
+			<div id="main_title">
+        <h1>Espace réservation</h1>
+      </div>
+        <!-- Menu Simplhotel -->
+          <nav class="menu menu--simplhotel">
+  					<ul class="menu__list">
+  						<li class="menu__item menu__item--current"><a href="index.html" class="menu__link">Accueil</a></li>
+  						<li class="menu__item"><a href="hotels.html" class="menu__link">Hôtels</a></li>
+  						<li class="menu__item"><a href="chambres.html" class="menu__link">Chambres</a></li>
+  						<li class="menu__item"><a href="contact.html" class="menu__link">Nous contacter</a></li>
+  						<li class="menu__item"><a href="reservation.html" class="menu__link">Réserver</a></li>
+  					</ul>
+  				</nav>
+		     </header>
+
+        <main class="main_contact">
+         <div class="container_reservation">
+           <div class="text_reservation">
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           </div>
+
+           <form action="post" class="form_reservation">
+             <fieldset>
+               <div class="sexe_reservation">
+                 <br><label class="label_reservation" for="homme">Monsieur :</label> <input type="radio" name="sexe" id="homme"class="homme_reservation" />
+                 <label class="label_reservation" for="femme">Madame :</label> <input type="radio" name="sexe" id="femme" class="femme_reservation"/><br>
+               </div><br>
+             <div class="align_reservation">
+               <label class="label_reservation" for="nom">Nom :</label> <input type="text" name="name" id="nom" class="input_reservation"><br>
+               <br><label class="label_reservation" for="prenom">Prénom :</label> <input type="text" name="surname" id="prenom" class="input_reservation"><br>
+               <br><label class="label_reservation" for="tel">Tél :</label> <input type="tel" name="tel" id="tel" class="input_reservation"><br>
+
+               <br><label class="label_reservation" for="hotel">Choisissez un hôtel :</label>
+                  <select name="choix hotel" id="hotel" class="select_reservation">
+                      <option value="charleville">Charleville</option>
+                      <option value="paris">Paris</option>
+                      <option value="lille">Lille</option>
+                      <option value="nancy">Nancy</option>
+                      <option value="rennes">Rennes</option>
+                      <option value="lyon">Lyon</option>
+                      <option value="grenoble">Grenoble</option>
+                      <option value="marseille">Marseille</option>
+                  </select><br>
+               <br><label class="label_reservation" for="pers">Nombre de personne :</label>  <input type="number" min=1 max=5 name="surname" id="pers" class="input_reservation"><br>
+               <br><label class="label_reservation" for="arriver">Date d'arrivée :</label>  <input type="date" name="surname" id="arriver" class="input_reservation"><br>
+               <br><label class="label_reservation" for="depart">Date de départ :</label> <input type="date" name="surname" id="depart" class="input_reservation"><br>
+             </div>
+               <br><center><input type="button" name="button" class="button_reservation" value="Valider" onclick="alert('réservation effectuée')"></center><br>
+             </fieldset>
+           </form>
+         </div>
+        </main>
+      <br><a href="#" class="to-top"></a><br>
+
+        <footer>
+          <div id="left">
+            <div class="coordonnees">
+              <i class="fas fa-home"></i>
+              <p class="text_footer">Adresse</p>
+            </div>
+            <p class="text_footer_left">Simplon.co – 55 Rue de Vincennes – 93 100 Montreuil</p>
+            <div class="coordonnees">
+              <i class="fas fa-phone-volume"></i>
+              <p class="text_footer">Téléphone</p>
+            </div>
+            <p class="text_footer_left">01 86 95 64 53</p>
+            <div class="coordonnees">
+              <i class="fas fa-at"></i>
+              <p class="text_footer">E-mail</p>
+            </div>
+            <p class="text_footer_left">inbox@simplon.co</p>
+          </div>
+          <div id="right">
+            <div id="aboutus">
+              <h3>À Propos</h3>
+              <p>Procedente igitur mox tempore cum adventicium nihil inveniretur, relicta ora maritima in Lycaoniam adnexam Isauriae se contulerunt ibique densis intersaepientes itinera praetenturis </p>
+            </div>
+            <div id="resos">
+              <a href="#" class="fab fa-facebook"></a>
+              <a href="#" class="fab fa-twitter-square"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-discord"></a>
+            </div>
+          </div>
+        </footer>
+
+  </body>
+</html>
