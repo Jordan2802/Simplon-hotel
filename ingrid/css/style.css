@@ -7,70 +7,61 @@ Ligth steel blue (bleu clair) #AAD5C0 */
 /* font-family: 'Cormorant Garamond', serif;
 font-family: 'Proza Libre', sans-serif; */
 
-*{
+* {
   margin: 0;
 }
-
-html{
+html {
   text-align: center;
   font-family: 'Proza Libre', sans-serif;
 }
-
 h1 {
-padding-top:250px;
-padding-bottom:250px;
-font-size: 4em;
-color:#ffffff;
-letter-spacing: 10px;
-text-shadow: 3px 3px 2px #E52C27;
-background-color:rgba(95, 114, 98,0.3);
+  padding-top:250px;
+  padding-bottom:250px;
+  font-size: 4em;
+  color:#ffffff;
+  letter-spacing: 10px;
+  text-shadow: 3px 3px 2px #E52C27;
+  background-color:rgba(95, 114, 98,0.3);
 }
-
-h2{
+h2 {
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 1.3em;
   font-weight:500;
   text-transform: uppercase;
 }
-
-h3{
+h3 {
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 1.3em;
   font-weight:500;
   text-transform: uppercase;
 }
-
-p{
+p {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.3em;
   text-align: justify;
 }
-
-header{
+header {
   width: 100%;
   background-color: #AAD5C0;
   justify-content: center;
 }
-
 #main_title {
-background-image: url("entête.jpeg");
+  background-image: url("entête.jpeg");
 }
 
-/* Menu Simplhotel */
+/* ==== menu ==== */
 
 .menu {
 	line-height: 2;
 	margin: 0 auto 4em;
 }
-
 .menu__list {
 	position: relative;
 	display: flex;
 	list-style: none;
 }
-
 .menu__link {
   text-decoration: none;
   font-family: 'Proza Libre', sans-serif;
@@ -78,19 +69,16 @@ background-image: url("entête.jpeg");
 	padding: 1em;
 	cursor: pointer;
 }
-
 .menu__link:hover,
 .menu__link:focus {
 	outline: none;
 }
-
 .menu--simplhotel .menu__item {
 	position: relative;
 	display: flex;
 	align-items: center;
 	margin:0 3.75em;
 }
-
 .menu--simplhotel .menu__item::before {
 	content: '';
 	position: absolute;
@@ -101,30 +89,23 @@ background-image: url("entête.jpeg");
   border-style: double;
   border-color: #000;
 }
-
 .menu--simplhotel .menu__item.menu__item--current::before {
-
 }
-
 .menu--simplhotel .menu__link {
 	position: relative;
 	color: #000000;
 }
-
 .menu--simplhotel .menu__link:hover,
 .menu--simplhotel .menu__link:focus {
 	color: #E52C27;
 }
-
 .menu--simplhotel .menu__item.menu__item--current .menu__link {
 	color: #05605F;
 }
-
 .menu__item {
 	display: block;
 	margin: 1em 0;
 }
-
 .menu__link {
   letter-spacing: -2px;
 	font-size: 1.3em;
@@ -132,7 +113,6 @@ background-image: url("entête.jpeg");
 	padding: 1em;
 	cursor: pointer;
 }
-
 .menu__link:hover,
 .menu__link:focus {
 	outline: none;
@@ -142,50 +122,48 @@ background-image: url("entête.jpeg");
 
 .main_hotel {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  max-width:100%;
+  text-align:center;
+  margin-bottom:5px;
 }
-
 #hotels {
-  width: 400px;
-  height:500px;
+  box-shadow: 2px 2px 10px #AAD5C0;
+  background-image: radial-gradient(circle at top left, #AAD5C0, #fff, #AAD5C0)
 }
-
-#hotels h3 {
-  font-size: 1.35em;
-}
-
-#main_title_hotels {
-  background-image: url("entete.jpeg");
-  background-size:cover ;
-  background-repeat: no-repeat;
-}
-
-#titre_hotels {
-  font-size: 2em;
-}
-
 #cut {
   display: flex;
   justify-content: space-between;
+  width: 710px;
+  padding-right:40px;
+  padding-top: 25px;
+  padding-bottom:25px;
+  border-radius:1px;
 }
-
 #map_canvas {
   height: 700px;
-  width: 900px;
-  margin:50px auto;
+  width: 750px;
+  margin:25px auto;
+  border-radius:1px;
 }
-
 #hotels a {
   text-decoration: none;
-  margin-left: 20px;
-  font-size: 1.5em;
+  font-size: 1.3em;
+	font-weight: 500;
+  color:#000;
+  font-family: 'Cormorant Garamond', serif;
 }
-
+#hotels a:hover {
+  text-decoration: none;
+  font-size: 1.3em;
+	font-weight: 500;
+  color:#E52C27;
+}
 #hotels li {
   margin-top: 5px;
 }
-
 #hotels ul {
   list-style-type: none;
   display: flex;
@@ -195,26 +173,22 @@ background-image: url("entête.jpeg");
 
 /* ==== body chambres ==== */
 
-.c1, .c3, .c5{
+.c1, .c3, .c5 {
   background-color: #DBDDD1;
   margin: 10px 0px 10px 20px;
   display: flex;
 }
-
-.c2, .c4{
+.c2, .c4 {
   background-color: #5F7262;
   margin: 20px 40px 20px 0px;
   display: flex;
 }
-
-.img_c1, .img_c2, .img_c3, .img_c4, .img_c5{
+.img_c1, .img_c2, .img_c3, .img_c4, .img_c5 {
   height: 100%;
 }
-
-.c1_p2, .c2_p1, .c3_p2, .c4_p1, .c5_p2{
- margin: 20px 40px 20px 40px;
+.c1_p2, .c2_p1, .c3_p2, .c4_p1, .c5_p2 {
+  margin: 20px 40px 20px 40px;
 }
-
 .infos_sup_clair {
   font-family: 'Proza Libre', sans-serif;
   font-size: 1.1em;
@@ -226,7 +200,6 @@ background-image: url("entête.jpeg");
   letter-spacing: 3px;
   margin-bottom:5px;
 }
-
 .infos_sup_foncé {
   font-family: 'Proza Libre', sans-serif;
   font-size: 1.1em;
@@ -239,13 +212,12 @@ background-image: url("entête.jpeg");
   margin-bottom:5px;
 }
 
-/* ==== Main contact ==== */
+/* ==== body contact ==== */
 
 .main_contact {
   display: flex;
   justify-content: center;
 }
-
 .form {
   background:#DBDDD1;
   padding: 100px 125px 100px 125px;
@@ -254,26 +226,22 @@ background-image: url("entête.jpeg");
   text-align: right;
   border-radius:1px;
 }
-
 .form .fas {
   font-size: 1.6em;
   float:left;
   justify-content: left;
 }
-
 .form .far {
   font-size: 1.6em;
   float:left;
   justify-content: left;
 }
-
-#name, #email, #phone{
+#name, #email, #phone {
   margin-top: 5px;
   margin-bottom: 5px;
   width: 300px;
   height: 30px;
 }
-
 textarea {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.0em;
@@ -281,21 +249,18 @@ textarea {
   text-decoration: none;
   margin-top: 10px;
   margin-bottom: 5px;
-width:90%;
-height:200px;
-padding-top: 15px;
-padding-left: 50px;
+  width:90%;
+  height:200px;
+  padding-top: 15px;
+  padding-left: 50px;
 }
-
-label > i{
+label > i {
   margin-right: 25px;
 }
-
-span{
+span {
   margin-right: 25px;
 }
-
-button{
+button {
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -313,14 +278,83 @@ button{
   background: none;
   border: 2px solid;
 }
+button:hover {
+}
 
-button:hover{
+/* ==== body réservation ==== */
 
+.container_reservation {
+  display: block;
+  padding: 100px 275px 100px 275px;
+  background-image: url(../img/font.jpg);
+  background-repeat: no-repeat;
+  border-radius:1px;
+}
+.text_reservation {
+  background-color: rgba(95, 114, 98, 0.6);
+  color: #AAD5C0;
+  margin: auto;
+  border: 2px solid #AAD5C0;
+  box-shadow: 2px 2px 10px #AAD5C0;
+  text-align: justify;
+  padding:25px 100px 25px 100px;
+}
+.form_reservation {
+  background-color:rgba(219, 221, 209,0.5);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3em;
+  color: #000000;
+  margin-top:25px;
+  border-radius:1px;
+  text-align:left;
+  justify-content: left;
+  padding:50px 100px 50px 100px;
+}
+fieldset {
+  background-color: rgba(95, 114, 98, 0.6);
+  box-shadow: 2px 2px 10px #AAD5C0;
+  max-width:175%;
+}
+.input_reservation {
+  float: right;
+  margin-right: 25px;
+  width:250px;
+  height: 30px;
+  font:1.4em;
+  font-family: 'Proza Libre', sans-serif;
+}
+.label_reservation {
+  padding-left:25px;
+}
+.select_reservation {
+  width:269px;
+  height: 37px;
+  float: right;
+  margin-right: 25px;
+  font:1.4em;
+  font-family: 'Proza Libre', sans-serif;
+}
+.button_reservation {
+	border-radius:1px;
+	font:1.4em;
+  font-family: 'Proza Libre', sans-serif;
+  color:#ffffff;
+  line-height: 1;
+  margin-top: 15px;
+  padding: 1em 4em;
+  background: none;
+  border: 2px solid;
+}
+.button_reservation:hover {
+  color:#000;
+  box-shadow: 2px 2px 1px 1px #AAD5C0;
+}
+.label_reservation {
 }
 
 /* ==== back to top ==== */
 
-.to-top{
+.to-top {
 	color:#000000;
 	padding-top:1.5em;
 	display:inline-block;/* or block */
@@ -329,7 +363,7 @@ button:hover{
 	text-decoration:none;
 	transition:all .3s ease-out;
 }
-.to-top:before{
+.to-top:before {
 	content:'▲';
 	font-size:2.5em;
   font-weight: lighter;
@@ -346,103 +380,20 @@ button:hover{
 	border-color:inherit;
 	transition:transform .5s ease-in;
 }
-.to-top:hover{
+.to-top:hover {
 	color:#E52C27;
 	border-color:#E52C27;
 }
-.to-top:hover:before{
+.to-top:hover:before {
 	transform: rotate(360deg);
 }
 
-/*formulaire de réservation/////////////////////////////////////////////////////////////////*/
+/* ==== footer ==== */
 
-.container_reservation {
-  display: block;
-  padding: 100px 275px 100px 275px;
-  background-image: url(../img/font.jpg);
-  background-repeat: no-repeat;
-  border-radius:1px;
-}
-
-.text_reservation{
-  background-color: rgba(95, 114, 98, 0.6);
-  color: #AAD5C0;
-  margin: auto;
-  border: 2px solid #AAD5C0;
-  box-shadow: 2px 2px 10px #AAD5C0;
-  text-align: justify;
-  padding:25px 100px 25px 100px;
-}
-
-.form_reservation{
-  background-color:rgba(219, 221, 209,0.5);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.3em;
-  color: #000000;
-  margin-top:25px;
-  border-radius:1px;
-  text-align:left;
-  justify-content: left;
-  padding:50px 100px 50px 100px;
-}
-
-fieldset{
-  background-color: rgba(95, 114, 98, 0.6);
-  box-shadow: 2px 2px 10px #AAD5C0;
-  max-width:175%;
-}
-
-.input_reservation {
-  float: right;
-margin-right: 25px;
-width:250px;
-height: 30px;
-font:1.4em;
-font-family: 'Proza Libre', sans-serif;
-}
-
-.label_reservation {
-padding-left:25px;
-}
-
-.select_reservation {
-  width:269px;
-  height: 37px;
-  float: right;
-margin-right: 25px;
-font:1.4em;
-font-family: 'Proza Libre', sans-serif;
-}
-
-.button_reservation {
-	border-radius:1px;
-	font:1.4em;
-  font-family: 'Proza Libre', sans-serif;
-  color:#ffffff;
-  line-height: 1;
-  margin-top: 15px;
-  padding: 1em 4em;
-  background: none;
-  border: 2px solid;
-}
-
-.button_reservation:hover{
-  color:#000;
-  box-shadow: 2px 2px 1px 1px #AAD5C0;
-}
-
-.label_reservation {
-
-}
-
-
-/* **************************footer********************** */
-
-footer{
+footer {
   background-image: radial-gradient(circle at top left, #DBDDD1, #AAD5C0);
   display: flex;
 }
-
 #left {
   flex:1;
   display: flex;
@@ -450,7 +401,6 @@ footer{
   justify-content: space-around;
   align-items:stretch;
 }
-
 #right {
   flex:1;
   height:300px;
@@ -459,32 +409,26 @@ footer{
   justify-content: space-around;
   align-items:stretch;
 }
-
 #resos {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
 #right h3 {
   text-align: left;
 }
-
 .text_footer {
   font-family: 'Proza Libre', sans-serif;
   font-size: 1.3rem;
   text-align: justify;
   padding-left: 25px;
 }
-
 .text_footer_left {
   margin-left:50px;
 }
-
 footer .fas {
   font-size: 1.6em;
 }
-
 .fab {
   letter-spacing: 30px;
   text-decoration: none;
@@ -492,18 +436,15 @@ footer .fas {
   margin-right: : 25px;
   color: #000;
 }
-
-.fa-facebook:hover, .fa-twitter-square:hover, .fa-instagram:hover, .fa-discord:hover{
+.fab:hover {
   transform: rotate(360deg);
   transition: 1s;
 }
-
 .coordonnees {
   display: flex;
   margin-left: 50px;
   margin-top:15px;
 }
-
 #aboutus {
   display: flex;
   margin-right: 50px;
