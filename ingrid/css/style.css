@@ -202,10 +202,11 @@ div#slider figure {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-image: radial-gradient(ellipse at bottom, #DBDDD1, #DBDDD1, #ffffff, #ffffff, #ffffff);
 }
 .img{
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   width: 300px;
   height: 300px;
 }
